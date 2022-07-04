@@ -25,7 +25,7 @@ export const hotel = {
       this.guests[this.getLength()] = {
         firstName,
         lastName,
-        money: money - this.priceByPlace,
+        money: (money -= this.priceByPlace),
       };
       this.paidPerPlace();
     }
