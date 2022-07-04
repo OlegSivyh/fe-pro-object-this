@@ -9,7 +9,7 @@ export const hotel = {
   },
 
   getActualFreePlace: function () {
-    return (this.quantityOfPlaces -= this.getLength());
+    return this.quantityOfPlaces - this.getLength();
   },
 
   paidPerPlace: function () {
