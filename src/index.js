@@ -28,7 +28,7 @@ export const hotel = {
         money: money - this.priceByPlace,
       };
       this.paidPerPlace();
-      return this.guests[this.getLength(-1)];
+      return this.guests[this.getLength() - 1];
     }
   },
 };
