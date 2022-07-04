@@ -13,7 +13,7 @@ export const hotel = {
   },
 
   paidPerPlace: function () {
-    return this.bankAccount + this.priceByPlace;
+    return (this.bankAccount += this.priceByPlace);
   },
 
   checkInGuest: function (firstName, lastName, money) {
