@@ -23,7 +23,9 @@ export const hotel = {
       return 'Sorry, you have not enough money';
     } else {
       this.guests[this.getLength()] = {
-        0: { firstName, lastName, money: money - this.priceByPlace },
+        firstName,
+        lastName,
+        money: money - this.priceByPlace,
       };
       this.paidPerPlace();
     }
