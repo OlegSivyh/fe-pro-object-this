@@ -2,7 +2,13 @@ export const hotel = {
   quantityOfPlaces: 30,
   priceByPlace: 20,
   bankAccount: 0,
-  guests: {},
+  guests: {
+    0: {
+      firstName: 'Bohdan',
+      lastName: 'Rammfall',
+      money: 40,
+    },
+  },
 
   getLength: function () {
     return Object.keys(this.guests).length;
@@ -23,7 +29,9 @@ export const hotel = {
       return 'Sorry, you have not enough money';
     } else {
       return (this.guests[this.getLength()] = {
-        0: { firstName, lastName, money: money - this.priceByPlace },
+        firstName,
+        lastName,
+        money: money - this.priceByPlace,
       });
       this.paidPerPlace();
     }
